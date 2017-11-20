@@ -1,5 +1,6 @@
+// Declaracion de variabless
+
 var text = document.getElementById('text');
-var contador = 140;
 var button = document.getElementById('button');
 var counter = document.getElementsByClassName('counter')[0];
 var container = document.getElementById('container');
@@ -7,7 +8,7 @@ var boxRight = document.getElementsByClassName('block-right')[0];
 
 // Agregando evento click al boton para q te retorne el contenido ingresado
 
-button.addEventListener('click', function(event) {
+button.addEventListener('click', function() {
   var firstBox = document.createElement('div');
   var content = document.createElement('p');
   content.textContent = text.value;
