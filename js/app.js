@@ -13,7 +13,9 @@ button.addEventListener('click', function(event) {
   content.textContent = text.value;
   var time = document.createElement('p');
   time.textContent = timeDate();
+
   // Agregando los estilos con css
+
   firstBox.className = 'styleBox';
   content.className = 'styleLetter';
   time.className = 'styleLetter';
@@ -61,16 +63,6 @@ text.addEventListener('keyup', function() {
   }
 }) ;
 
-// Desabilitar el boton cuando pasa de los 140 caracteres
-
-text.addEventListener('keyup', function() {
-  var letters = text.value.length;
-  if (letters > 140) {
-    button.disabled = true;
-  } else {
-    button.disabled = false;
-  }
-});
 // Agregando la hora
 
 var timeDate = function() {
