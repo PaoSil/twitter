@@ -135,6 +135,7 @@ textarea {
   height: auto;
 }
 
+/* Estilos elementos creados a JS */
 .styleBox {
   background-color: #ebccce;
   width: auto;
