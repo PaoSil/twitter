@@ -17,9 +17,9 @@ button.addEventListener('click', function() {
 
   // Agregando los estilos con css
 
-  firstBox.className = 'styleBox';
-  content.className = 'styleLetter';
-  time.className = 'styleLetter';
+  firstBox.className = 'box';
+  content.className = 'letter';
+  time.className = 'letter';
   if (text.value === false) {
     alert('Ingrese contenido:');
   } else {

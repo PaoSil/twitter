@@ -136,7 +136,8 @@ textarea {
 }
 
 /* Estilos elementos creados a JS */
-.styleBox {
+
+.box {
   background-color: #ebccce;
   width: auto;
   height: 100px;
@@ -149,7 +150,7 @@ textarea {
   overflow: hidden;
 }
 
-.styleLetter {
+.letter {
   text-decoration: none;
   margin: 0;
   padding: 5px 0;
