@@ -3,8 +3,10 @@ var contador = 140;
 var button = document.getElementById('button');
 var counter = document.getElementsByClassName('counter')[0];
 var container = document.getElementById('container');
-var boxRight = document.getElementsByClassName('box-right')[0];
+var boxRight = document.getElementsByClassName('block-right')[0];
+
 // Agregando evento click al boton para q te retorne el contenido ingresado
+
 button.addEventListener('click', function(event) {
   var firstBox = document.createElement('div');
   var content = document.createElement('p');
@@ -26,6 +28,7 @@ button.addEventListener('click', function(event) {
 });
 
 // Cambio de color del boton al ingresar texto
+
 text.addEventListener('keyup', function() {
   var contenido = text.value;
   var length = text.value.lenght;
@@ -39,16 +42,18 @@ text.addEventListener('keyup', function() {
     boxRight.style.height = boxRight.scrollHeight + 'px';
   }
   // Agregando el contador
+
   var letters = text.value.length;
   var restaContador = 140 - letters;
   counter.textContent = restaContador;
 });
 
 // Agregando colores a los caracteres
+
 text.addEventListener('keyup', function() {
   var letters = text.value.length;
   if (letters >= 0 && letters <= 119) {
-    counter.className = 'original';
+    counter.className = 'counter';
   } else if (letters = 120 && letters <= 129) {
     counter.className = 'green';
   } else {
@@ -57,6 +62,7 @@ text.addEventListener('keyup', function() {
 }) ;
 
 // Desabilitar el boton cuando pasa de los 140 caracteres
+
 text.addEventListener('keyup', function() {
   var letters = text.value.length;
   if (letters > 140) {
@@ -66,6 +72,7 @@ text.addEventListener('keyup', function() {
   }
 });
 // Agregando la hora
+
 var timeDate = function() {
   var date = new Date();
   var time = date.getHours() + ":" + date.getMinutes();
